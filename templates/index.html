@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--自己添加的声明-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AI智能客服</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--css/js-->
+    <style type="text/css">
+    *{margin: 0;padding: 0;}
+    body{background: #e6eaf1c4;}
+    .chat{width:900px;height:530px;background:#ffcc00;margin: 100px auto;}
+    .c-title{height: 68px;background: #66ccff; line-height:68px;font-size: 20px;padding-left:20px;color:#ffffff;font-weight: 300; }
+    .c-con{height: 380px;background: #eff0f2;overflow: scroll;}
+    .c-message{height:82px;background: #dddfe3;}
+    .c-left img{vertical-align: middle;padding: 10px 10px 10px 10px;}
+    .c-right{text-align: right;}
+    .c-right img{vertical-align: middle;padding: 10px 10px 10px 10px;}
+    .c-box{width:780px;height:62px;padding: 10px;outline:none;float: left;}
+    .c-btn{float: right;}
+    .c-btn input{width: 100px;height:82px;border: none;background: #cfcfcf;cursor:pointer; outline:none;}
+    </style>
+
+    <script type="text/javascript" src="/static/js/jquery.js"></script><!--这段是固定的引用jquery库-->
+
+</head>
+<body>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+    <!--div层，盒子，容器-->
+    <div class="chat">
+
+        <div class="c-title">AI金融客服  V1.1</div>
+
+        <div class="c-con" id="msgs">
+
+            <div class="c-left">
+                <img src="../static/images/jimi.png" alt="jimi智能客服" width="50" height="50"/>您好这里是智能客服！ 请问您有什么需要。
+            </div>
+            <div class="c-right">
+                你好！<img src="../static/images/Tourist.png" alt="jimi智能客服" width="50" height="50"/>
+            </div>
+
+        </div>
+        <div class="c-message">
+
+            <div class="c-box" contenteditable="true">
+                <input type="text" name="a" id= "a" autocomplete="off" style="width:100%;height:100%;" />
+            </div>
+
+            <div class="c-btn">
+                <input type="button" id="btn" value="发 送" />
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
